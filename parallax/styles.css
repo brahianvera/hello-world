@@ -37,13 +37,17 @@ header::before{
 	top: 0;
 	display:block;
 	background-image: url(universe.jpg);
-	background-size:cover; /*NO entiendo*/
-	transform-origin: center center 0; /*NO entiendo*/
-	transform: translateZ(-1px) scale(2); /*NO entiendo*/
+	background-size:cover; /*The background image to cover the entire container*/
+	transform-origin: center center 0; /*allows to change the origin of a transform*/
+	transform: translateZ(-1px) scale(2); /*translateZ: define a 3D translation, using only the value for the Z-axis, scale: Defines a 
+	3D scale transformation*/
 	z-index: -1;
 	min-height: 100vh;
     	width: 100vw;
 }
+/*
+* Todos los elementos dentro de un header o de la etiqueta
+*/
 header * {
 	font-weight: normal;
 	letter-spacing: 0.2em;
